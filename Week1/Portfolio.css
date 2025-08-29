@@ -1,0 +1,182 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+.heading {
+    background: #4f46e5;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/* Visual Intro */
+.visual_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+}
+
+.visual_container img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.visual_container p {
+    font-size: 1rem;
+    max-width: 300px;
+}
+
+/* Sections & Sidebar */
+section,
+.sider {
+    background: #fff;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    max-width: 700px;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+}
+
+section h2,
+.sider h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    color: #4f46e5;
+}
+
+.sider ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.sider li {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.sider li::before {
+    content: "•";
+    color: #4f46e5;
+    margin-right: 0.4rem;
+}
+
+/* Cards */
+.education-card,
+.project-card {
+    background: #fafafa;
+    border-left: 3px solid #4f46e5;
+    padding: 0.7rem;
+    border-radius: 5px;
+    margin-bottom: 0.7rem;
+}
+
+.education-card h3,
+.project-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.education-card strong {
+    color: #4f46e5;
+}
+
+.education-card span {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.project-card ul {
+    margin-left: 1rem;
+    list-style: disc;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 0.7rem;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    background: #4f46e5;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .visual_container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Timetable */
+.timetable {
+    margin: 30px auto;
+    width: 95%;
+    max-width: 700px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.timetable caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px;
+    background: #4f46e5;
+    color: #fff;
+}
+
+.timetable th,
+.timetable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.timetable thead th {
+    background: #4f46e5;
+    color: #fff;
+}
+
+.timetable tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.timetable tbody tr:hover {
+    background: #eaf4ff;
+}
+
+.timetable tfoot td {
+    background: #4f46e5;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
