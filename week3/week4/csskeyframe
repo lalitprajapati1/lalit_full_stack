@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to top, #0d0d2b, #1b1b4d);
+      overflow: hidden;
+    }
+
+    .rocket {
+      position: absolute;
+      bottom: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      animation: launch 6s infinite ease-in-out;
+    }
+
+    .astronaut {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      width: 120px;
+      animation: float 4s infinite ease-in-out;
+    }
+
+    @keyframes launch {
+      0% { bottom: -200px; }
+      100% { bottom: 110%; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+  <img src="rocket.png" alt="Rocket" class="rocket">
+  <img src="astronaut.png" alt="Astronaut" class="astronaut">
+</body>
+</html>
